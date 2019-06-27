@@ -2,6 +2,7 @@ package p3_RecursivePrintFigure;
 
 import java.util.Scanner;
 
+//PRE-ACTION - POST ACTION PROBLEM
 public class PrintFigure {
 
 	public static void main(String[] args) {
@@ -19,13 +20,21 @@ public class PrintFigure {
 		// PRE-ACTION
 		System.out.println(draw("-", n));
 		
+		//Example: IF n=3; Before method invoke itself Print
+		//---
+		//--
+		//-
 		printFigure(n - 1);
+		// Starting pop from Stack
+		//#
+		//##
+		//###
 		
 		//POST ACTION
 		System.out.println(draw("#", n));
 	}
 	
-	private static String draw(String symbol, int n) {
+    public static String draw(String symbol, int n) {
 		String line = "";
 		for (int i = 0; i < n; i++) {
 			line += symbol;
