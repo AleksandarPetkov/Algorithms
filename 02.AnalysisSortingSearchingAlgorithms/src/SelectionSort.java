@@ -1,5 +1,8 @@
-//Намира най малки елемент и го разменя
-//Use Selection sort: For small arrays (less than 20-30 elements). Аround O(n*logn)
+//Намира най малки елемент и го разменя, по този начин всичко от ляво на текущия индекс е сортирано
+//Много бавен О(n2)
+//Unstable
+//Memory - O(1): Ползва константна памет (Не изполва допълнителни Масиви, Рекурсия)
+//Use Selection sort: For small arrays (less than 20-30 elements). 
 public class SelectionSort {
 	
 	private static int[] array = {44, 31, 4, 23, 1, 6666, 12};
